@@ -34,8 +34,11 @@ dependencies {
 	annotationProcessor 'org.projectlombok:lombok'
 	runtimeOnly 'com.h2database:h2'
 	implementation 'org.springframework.boot:spring-boot-starter-data-jpa'
+	
+	//for Test
 	testImplementation 'org.junit.jupiter:junit-jupiter'
 	testRuntimeOnly 'org.junit.platform:junit-platform-launcher'
+	//testImplementation "org.mockito:mockito-inline:5.+" //self attach error (JDK 21)
 }
 
 tasks.named('test') {
