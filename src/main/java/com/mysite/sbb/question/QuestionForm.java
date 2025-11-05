@@ -9,10 +9,10 @@ import lombok.Setter;
 @Getter
 @Setter
 public class QuestionForm {
-	@NotEmpty(message="Title can't be Empty.")
+	@NotEmpty(message="Title can not be Empty.")
 	@Size(max=200)
 	private String subject;
 	
-	@NotEmpty(message="Content can't be Empty.")
+	@NotEmpty(message="Content can not be Empty.")
 	private String content;
 }
